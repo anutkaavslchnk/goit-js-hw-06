@@ -14,7 +14,7 @@ const images = [
 ];
 for(const image of images){
   const list=document.querySelector('.gallery');
-  const markup=`<li><img src='${image.url}' alt='${image.alt}' /></li><li><img src='${image.url}' alt='${image.alt}' /></li><li><img src='${image.url}' alt='${image.alt}' /></li>`;
+  const markup=`<li><img src='${image.url}' alt='${image.alt}'  /></li><li><img src='${image.url}' alt='${image.alt}' /></li><li><img src='${image.url}' alt='${image.alt}' /></li>`;
 
   list.insertAdjacentHTML("beforeend", markup);
 }

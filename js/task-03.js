@@ -12,10 +12,10 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-for(const image of images){
-  const list=document.querySelector('.gallery');
-  const markup=`<li><img src='${image.url}' alt='${image.alt}'  /></li><li><img src='${image.url}' alt='${image.alt}' /></li><li><img src='${image.url}' alt='${image.alt}' /></li>`;
+const list=document.querySelector('.gallery');
 
-  list.insertAdjacentHTML("beforeend", markup);
-}
- 
+
+ const array=images.map((image)=>{
+return `<li><img src='${image.url}' alt='${image.alt}'  /></li>`;
+ });
+ list.insertAdjacentHTML("beforeend", array);

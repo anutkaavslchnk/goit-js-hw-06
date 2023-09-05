@@ -10,8 +10,8 @@ if(email===""|| password===""){
 }else{
     const { email, password } = event.currentTarget.elements;
 const information={
-  email:email,
-  password:password
+  email:email.value,
+  password:password.value
 };
    
    

@@ -19,3 +19,4 @@ const list=document.querySelector('.gallery');
 return `<li><img src='${image.url}' alt='${image.alt}'  /></li>`;
  });
  list.insertAdjacentHTML("beforeend", array);
+/* <li><img src='${image.url}' alt='${image.alt}'  /></li> */
